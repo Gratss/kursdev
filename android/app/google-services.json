@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "805671777132",
+    "project_id": "kurs11",
+    "storage_bucket": "kurs11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:805671777132:android:f9e115060751435f0eb949",
+        "android_client_info": {
+          "package_name": "com.gleb19.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeyNfjpu7-FxzC9S_lSkMG7lkvQhoSKQo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:805671777132:android:60f6c584436b5e640eb949",
+        "android_client_info": {
+          "package_name": "com.glebkurs11.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeyNfjpu7-FxzC9S_lSkMG7lkvQhoSKQo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
