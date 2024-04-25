@@ -140,3 +140,7 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 }
+
+class SnackBarService {
+  static void showSnackBar(BuildContext context, String s, bool bool) {}
+}

@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:gleb/screens/home_screen.dart';
 import 'package:gleb/services/snack_bar.dart';
 
+import 'login_screen.dart';
+
 class VerifyEmailScreen extends StatefulWidget {
   const VerifyEmailScreen({super.key});
 

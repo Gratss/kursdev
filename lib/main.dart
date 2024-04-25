@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:gleb/screens/account_screen.dart';
@@ -19,6 +20,41 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(const MyApp());
+}
+
+class FirebaseStream extends StatefulWidget {
+  const FirebaseStream({Key? key}) : super(key: key);
+
+  @override
+  _FirebaseStreamState createState() => _FirebaseStreamState();
+}
+
+class _FirebaseStreamState extends State<FirebaseStream> {
+  final FirebaseAuth _auth = FirebaseAuth.instance;
+
+  @override
+  Widget build(BuildContext context) {
+    return StreamBuilder(
+      stream: _auth.authStateChanges(),
+      builder: (context, snapshot) {
+        if (snapshot.connectionState == ConnectionState.waiting) {
+          return Scaffold(
+            body: Center(
+              child: CircularProgressIndicator(),
+            ),
+          );
+        } else {
+          if (snapshot.hasData) {
+            // Если пользователь уже авторизован, перейдите на главный экран
+            return HomeScreen();
+          } else {
+            // Если пользователь не авторизован, перейдите на экран входа
+            return LoginScreen();
+          }
+        }
+      },
+    );
+  }
 }
 
 class MyApp extends StatelessWidget {
