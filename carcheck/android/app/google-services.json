@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "968262168119",
+    "project_id": "cartech5",
+    "storage_bucket": "cartech5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968262168119:android:74d3404998c1ab20f619b2",
+        "android_client_info": {
+          "package_name": "com.example.carcheck"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD00bc_c8JlaLhlXjOaThADFHOrxuGVOQs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968262168119:android:7da4cf7d69b35c51f619b2",
+        "android_client_info": {
+          "package_name": "com.example.cartech5"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD00bc_c8JlaLhlXjOaThADFHOrxuGVOQs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
